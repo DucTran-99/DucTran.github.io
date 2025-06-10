@@ -1,0 +1,7 @@
+body > div:first-child {
+  overflow-x: hidden;
+}
+
+.custom-popover {
+  min-width: 700px !important;
+}
