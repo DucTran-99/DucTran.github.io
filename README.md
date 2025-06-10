@@ -3,7 +3,7 @@
 ## Welcome to my personal portfolio website! This repository hosts the source code for my portfolio, showcasing my projects, skills, and experiences as a developer.
 <p align="center">
   <kbd>
-    <img src="https://github.com/1hanzla100/developer-portfolio/blob/master/picture.PNG"></img>
+    <img src="https://github.com/DucTran-99/DucTran.github.io/blob/master/picture.PNG"></img>
   </kbd>
 </p>
 
