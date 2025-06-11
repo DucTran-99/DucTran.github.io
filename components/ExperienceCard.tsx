@@ -1,4 +1,5 @@
 import {
+  Badge,
   Card,
   CardBody,
   CardSubtitle,
@@ -22,7 +23,7 @@ const ExperienceCard = ({
   desc,
   descBullets,
   technologies,
-  otherProjects,
+  projects,
 }: ExperienceCardProps) => {
   const targetId = `card-${id}`;
 
@@ -66,18 +67,16 @@ const ExperienceCard = ({
                     return <li key={desc}>{desc}</li>;
                   })
                 : null}
-              {otherProjects && otherProjects?.length > 0 && <a className="text-warning">Hover Show More!</a>}
+              {projects && projects?.length > 0 && <a className="text-warning">Hover Show More!</a>}
             </ul>
             {technologies && technologies?.length > 0 && (
               <div className="text-sm">
-                <span style={{ fontWeight: 700 }}>Technologies:</span>
+                <span style={{ fontWeight: 700 }}>Technologies: </span>
                 {technologies.map((tech, index) => {
                   return (
-                    <span key={tech}>
-                      {" "}
+                    <Badge key={tech} className="mr-2">
                       {tech}
-                      {index !== technologies.length - 1 ? ", " : ""}
-                    </span>
+                    </Badge>
                   );
                 })}
               </div>
@@ -86,11 +85,11 @@ const ExperienceCard = ({
         </CardBody>
       </Card>
 
-      {otherProjects && otherProjects?.length > 0 && (
+      {projects && projects?.length > 0 && (
         <UncontrolledPopover target={targetId} trigger="hover" popperClassName="custom-popover">
           <PopoverHeader>Other Projects</PopoverHeader>
-          <PopoverBody>
-            {otherProjects.map((project, index) => (
+          <PopoverBody style={{ maxHeight: "500px", overflowY: "scroll", position: "relative" }}>
+            {projects.map((project, index) => (
               <div key={index}>
                 {project.logo && (
                   <img
@@ -110,29 +109,48 @@ const ExperienceCard = ({
                     alt={project.logo}
                   />
                 )}
-                {project.name}
-                <ul>
+                <span style={{ fontWeight: 700, fontSize: "15px", color: "#525f7f" }}>{project.name}</span>
+                <div>
                   {project.desc
                     ? project.desc.map(desc => {
-                        return <li key={desc}>{desc}</li>;
+                        return (
+                          <p
+                            key={desc}
+                            style={{ fontSize: "14px", color: "#525f7f", fontWeight: 400, margin: "0 !important" }}
+                          >
+                            - {desc}
+                          </p>
+                        );
                       })
                     : null}
-                </ul>
+                </div>
+                {project.other
+                  ? project.other.map((other, index) => (
+                      <div key={index}>
+                        <span>{other.name}</span>
+                        <ul>
+                          {other.desc
+                            ? other.desc.map(desc => {
+                                return <li key={desc}>{desc}</li>;
+                              })
+                            : null}
+                        </ul>
+                      </div>
+                    ))
+                  : null}
                 {project.technologies && project.technologies?.length > 0 && (
                   <div className="text-sm">
-                    <span style={{ fontWeight: 700 }}>Technologies:</span>
+                    <span style={{ fontWeight: 700 }}>Technologies: </span>
                     {project.technologies.map((tech, index) => {
                       return (
-                        <span key={tech}>
-                          {" "}
+                        <Badge key={tech} className="mr-2">
                           {tech}
-                          {index !== tech.length - 1 ? ", " : ""}
-                        </span>
+                        </Badge>
                       );
                     })}
                   </div>
                 )}
-                {index !== otherProjects.length - 1 ? <hr className="my-1" /> : ""}
+                {index !== projects.length - 1 ? <hr className="my-1" /> : ""}
               </div>
             ))}
           </PopoverBody>

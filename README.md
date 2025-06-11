@@ -49,8 +49,8 @@ Feel free to reach out if you have questions or want to connect:
 
 👤 **Tran Trung Duc**
 
-Email: [ttduc101@gmail.com]
-LinkedIn: https://www.linkedin.com/in/duc-tran-68903b231/
-GitHub: DucTran-99
+- **Email**: [ttduc101@gmail.com]
+- **LinkedIn**: https://www.linkedin.com/in/duc-tran-68903b231/
+- **GitHub**: DucTran-99
 
 Thank you for visiting my portfolio!

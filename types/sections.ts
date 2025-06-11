@@ -68,14 +68,15 @@ export type EducationType = {
 
 // * EXPERIENCE SECTION
 
-export type OtherProjects = {
+export type Projects = {
   logo?: string;
   name: string;
   desc: string[];
   github?: string;
   link?: string;
   technologies?: string[];
-  other?: OtherProjects[]
+  other?: Projects[];
+  images?: string[];
 }
 
 export type ExperienceType = {
@@ -86,7 +87,7 @@ export type ExperienceType = {
   date: string;
   desc: string;
   descBullets?: string[];
-  otherProjects?: OtherProjects[],
+  projects?: Projects[],
   technologies?: string[];
 };
 
@@ -98,6 +99,7 @@ export type ProjectType = {
   desc: string;
   github?: string;
   link?: string;
+  figma?: string;
 };
 
 // * FEEDBACK SECTION

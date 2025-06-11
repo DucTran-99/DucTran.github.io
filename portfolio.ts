@@ -16,7 +16,7 @@ export const greetings: GreetingsType = {
   title: "Hi all, I'm Duc",
   description:
     "I'm a passionate Website Developer dedicated to crafting seamless and engaging digital experiences. With a strong sense of responsibility and an eagerness to learn, I continuously explore new technologies to deliver innovative and efficient solutions that exceed expectations.",
-  resumeLink: "#",
+  resumeLink: "/cv/TranTrungDuc.pdf",
 };
 
 export const openSource = {
@@ -29,9 +29,9 @@ export const socialLinks: SocialLinksType = {
   email: "ttduc1011@gmail.com",
   linkedin: "https://www.linkedin.com/in/duc-tran-68903b231/",
   github: "https://github.com/DucTran-99",
-  // instagram: "https://www.instagram.com/__hanzla100",
-  // facebook: 'https://www.facebook.com/1hanzla100',
-  // twitter: 'https://twitter.com/1hanzla100',
+  // instagram: "",
+  // facebook: '',
+  // twitter: '',
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -91,7 +91,7 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: "Recoil",
           iconifyTag: "logos:recoil",
-        }
+        },
       ],
       library: [
         {
@@ -133,8 +133,8 @@ export const skillsSection: SkillsSectionType = {
         {
           libraryName: "Remix",
           iconifyTag: "material-icon-theme:remix",
-        }
-      ]
+        },
+      ],
     },
   ],
 };
@@ -167,19 +167,17 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    id: '1',
+    id: "1",
     role: "FrontEnd Developer",
     company: "Tech JDI",
     companyLogo: "/img/icons/common/jdi.png",
     date: "Mar 2025 - May 2025",
     desc: "Develop a portal to manage and aggregate the company's services using AI, such as: facial recognition, real estate suggestions, financial reporting and analysis",
-    descBullets: [
-      "In addition, also participate in developing the company's service introduction website",
-    ],
-    technologies: ["Reactjs", "Nextjs", "Nodejs", "ec2 AWS", "Docker", "Payload cms", "Mongo DB","Figma"]
+    descBullets: ["In addition, also participate in developing the company's service introduction website"],
+    technologies: ["Reactjs", "Nextjs", "Nodejs", "ec2 AWS", "Docker", "Payload cms", "Mongo DB", "Figma"],
   },
   {
-    id: '2',
+    id: "2",
     role: "FrontEnd Developer",
     company: "SOLIDBYTES SOLUTIONS LTD",
     companyLogo: "/img/icons/common/solidbytes.svg",
@@ -189,19 +187,32 @@ export const experience: ExperienceType[] = [
       "The interface design allows users (for candidates)",
       "Develop an interactive dashboard for employers",
       "Develop Recruiter CRM, Admin and Sales System",
-      "Other projects: Persect, Salus Admin, Volta Charging, Amaze Seller Center"
+      "Other projects: Persect, Salus Admin, Volta Charging, Amaze Seller Center",
     ],
-    otherProjects: [
+    projects: [
       {
         name: "Persect - Real Estate Application with Map Integration",
         desc: [
           "Developed an advanced real estate listing platform that integrates interactive maps, providing a seamless experience for users searching for properties across Vietnam.",
           "The main interface allow user to: view a map to location properties (display information, price, rates and comment with other users ), integrate feng shui viewing for real estate, view age (real-time processing for each feature)",
-          "Develop a admin panel for managing property data, ensuring easy updates and modifications."
+          "Develop a admin panel for managing property data, ensuring easy updates and modifications.",
         ],
-        technologies: ["Reactjs", "Redux", "Sass", "React query", "Ant Design", "Github", "MapBoxGl", "GoogleMap", "React Router", "Chart", "Figma"],
+        technologies: [
+          "Reactjs",
+          "Redux",
+          "Sass",
+          "React query",
+          "Ant Design",
+          "Github",
+          "MapBoxGl",
+          "GoogleMap",
+          "React Router",
+          "Chart",
+          "Figma",
+        ],
         github: "",
         link: "",
+        images: [],
       },
       {
         logo: "/img/icons/common/salus.svg",
@@ -210,32 +221,41 @@ export const experience: ExperienceType[] = [
           "Designed and developed an admin dashboard for managing user data related to insurance registration and policy tracking. This system enables administrators to efficiently handle user registrations, verify policy details, and monitor transaction history in real time.",
           "Handling large volumes of user registration data securely and efficiently.",
           "Implementing a structured data management system to track policy statuses and claim histories.",
-          "Ensuring intuitive user experience for administrators to quickly access and manage customer information."
+          "Ensuring intuitive user experience for administrators to quickly access and manage customer information.",
         ],
         technologies: ["Reactjs", "Ant Design", "HTML5", "Chart", "Css"],
+        images: [],
       },
       {
         logo: "/img/icons/common/volta.png",
         name: "Volta Charging – Electricity Consumption Dashboard (U.S. Market)",
-        desc: [
-          "A web-based dashboard for tracking electricity consumption at EV charging stations across the U.S."
-        ],
-        other:[
+        desc: ["A web-based dashboard for tracking electricity consumption at EV charging stations across the U.S."],
+        other: [
           {
             name: "Ev charging stations Portal",
             desc: [
               "Track electricity consumption at EV charging stations across the US.",
-              "Integrated data visualization tools (Chart.js) to provide actionable insights."
-            ]
+              "Integrated data visualization tools (Chart.js) to provide actionable insights.",
+            ],
           },
           {
             name: "Monitor population dashboard",
-            desc: [
-              "Developed an interactive map displaying energy usage statistics across different states."
-            ]
-          }
+            desc: ["Developed an interactive map displaying energy usage statistics across different states."],
+          },
         ],
-        technologies: ["Reactjs", "Redux", "Sass", "Material UI", "Github", "MapBoxGl", "React Router", "Chart", "Figma", "Jira"],
+        technologies: [
+          "Reactjs",
+          "Redux",
+          "Sass",
+          "Material UI",
+          "Github",
+          "MapBoxGl",
+          "React Router",
+          "Chart",
+          "Figma",
+          "Jira",
+        ],
+        images: [],
       },
       {
         logo: "/img/icons/common/amaze.png",
@@ -248,39 +268,53 @@ export const experience: ExperienceType[] = [
             name: "Admin Panel",
             desc: [
               "Designed to manage and analyze user data, KOL activities, products, store, package usage history,....",
-              "Integrated real-time data visualization for tracking sales performance and ad efficiency."
-            ]
+              "Integrated real-time data visualization for tracking sales performance and ad efficiency.",
+            ],
           },
           {
             name: "Amaze Center",
             desc: [
               "Allows users to create products, design advertising banners, set up stores, track inventory, and monitor shopping campaigns, affiliate analysis, ...",
-              "Deploy store data tracking and campaign insights to make better decisions."
-            ]
-          }
+              "Deploy store data tracking and campaign insights to make better decisions.",
+            ],
+          },
         ],
         technologies: ["Reactjs", "Redux", "Tailwindcss", "Ant Design", "GitLab", "React Router", "Chart", "Figma"],
-      }
+        images: [],
+      },
     ],
-    technologies: ["Reactjs", "Nextjs", "Redux", "Tailwindcss", "Sass", "React query", "Ant Design", "GitLab", "MapBoxGl", "React Router", "Chart", "Figma"]
+    technologies: [
+      "Reactjs",
+      "Nextjs",
+      "Redux",
+      "Tailwindcss",
+      "Sass",
+      "React query",
+      "Ant Design",
+      "GitLab",
+      "MapBoxGl",
+      "React Router",
+      "Chart",
+      "Figma",
+    ],
   },
   {
-    id: '3',
+    id: "3",
     role: "FrontEnd Developer",
     company: "SpaceFinTech",
     companyLogo: "/img/icons/common/spacefintech.png",
     date: "Oct 2021 - Feb 2022",
     desc: "A secure online platform for buying, selling, transferring, and storing cryptocurrencies and NFTs, supporting multiple blockchain networks.",
-    technologies: ["Reactjs", "Bootstrap", "Redux", "React Router", "Styled-components", "Web3-React", "Mui"]
+    technologies: ["Reactjs", "Bootstrap", "Redux", "React Router", "Styled-components", "Web3-React", "Mui"],
   },
   {
-    id: '4',
+    id: "4",
     role: "FrontEnd Developer & Designer",
     company: "VietUnion Online Services Corporation (Payoo) - Internship",
     companyLogo: "/img/icons/common/payoo.png",
     date: "Mar 2020 - Jul 2021",
     desc: "The website design project synthesizes all payoo services and integrates some new services",
-    technologies: ["Reactjs", "Bootstrap", "Redux", "React Router", "Figma"]
+    technologies: ["Reactjs", "Bootstrap", "Redux", "React Router", "Figma"],
   },
 ];
 
@@ -289,7 +323,7 @@ export const projects: ProjectType[] = [
     id: "1",
     name: "Agent Admin Portal",
     desc: "Admin portal web application for managing users, prompts, tasks, facial recognition, email history, reports, and Telegram chat boxes.",
-    link: "#"
+    link: "#",
   },
   {
     id: "2",
@@ -297,12 +331,14 @@ export const projects: ProjectType[] = [
     desc: "A dashboard for employers to manage job postings, track applications, buy packages, trade CV, post job (with AI integration), introduce candidates to employers, candidate filtering systems, and more.",
     // github: "https://github.com/1hanzla100/developer-portfolio",
     link: "https://drive.google.com/file/d/1NfdX03QYFVO6_uTmXBJBURkrrWU2kj4M/view?usp=sharing",
+    figma: "https://www.figma.com/proto/eC5r0OvBc6UCqGMuthOfUD/web-recruitment?node-id=511-2937&t=bSmh61xv9UzvzA8I-1",
   },
   {
     id: "3",
     name: "JobFi - Job Seeker",
     desc: "The interface design allows users (for candidates): create profiles, apply for jobs easily (with AI integration for apply by PDF), optimize profile with AI, built advanced job filtering by industry, location, and salary for a seamless job search experience and more.",
     link: "https://drive.google.com/file/d/112If27IFZzNebH2VKthbcGiZRGHOw6Sp/view?usp=sharing",
+    figma: "https://www.figma.com/proto/eC5r0OvBc6UCqGMuthOfUD/web-recruitment?node-id=0-1&t=bSmh61xv9UzvzA8I-1",
   },
   {
     id: "4",
@@ -352,9 +388,5 @@ export const seoData: SEODataType = {
   author: "Tran Trung Duc",
   image: "https://avatars.githubusercontent.com/u/59178380?v=4",
   url: "",
-  keywords: [
-    "DucTran-99",
-    "Portfolio",
-    "Tran Trung Duc Portfolio",
-  ],
+  keywords: ["DucTran-99", "Portfolio", "Tran Trung Duc Portfolio"],
 };
